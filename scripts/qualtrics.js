@@ -9,7 +9,6 @@ function mostrarOcultarContenido() {
         mostrado = true;
         return;
     }
-    
     // Alternar la propiedad "display" del div para mostrar u ocultar el contenido
     if (contenidoGenerado.style.display === "none") {
         contenidoGenerado.style.display = "block";
@@ -29,5 +28,25 @@ function mostrarEncuestaInner() {
     } else {
         encuestaContainer.innerHTML = '<iframe src="https://aysa.qualtrics.com/jfe/form/SV_02155pALedYOBW6" width="50%" height="700" frameborder="0" marginheight="0" marginwidth="0">Cargando encuesta...</iframe>';
         contenidoVisible = true;
+    }
+}
+
+// encuesta caritas
+var contenidoGeneradoEncuesta = document.getElementById("contenido-generado-encuesta");
+contenidoGeneradoEncuesta.innerHTML = '<iframe src="https://aysa.qualtrics.com/jfe/form/SV_02155pALedYOBW6" width="50%" height="700" frameborder="0" marginheight="0" marginwidth="0">Cargando encuesta...</iframe>';
+var mostrado2 = false;
+contenidoGeneradoEncuesta.style.display = "none";
+function mostrarOcultarContenido() {
+    // Mostrar el contenido generado si aún no se ha mostrado
+    if (!mostrado2) {
+        contenidoGenerado.style.display = "block";
+        mostrado2 = true;
+        return;
+    }
+    // Alternar la propiedad "display" del div para mostrar u ocultar el contenido
+    if (contenidoGeneradoEncuesta.style.display === "none") {
+        contenidoGeneradoEncuesta.style.display = "block";
+    } else {
+        contenidoGeneradoEncuesta.style.display = "none";
     }
 }
