@@ -31,7 +31,7 @@ function mostrarEncuestaInner() {
     }
 }
 
-// encuesta precargada
+// encuesta precargada (no hace falta el codigo de qualtrics en la web)
 var contenidoGeneradoEncuesta = document.getElementById("contenido-generado-encuesta");
 contenidoGeneradoEncuesta.innerHTML = '<iframe src="https://aysa.qualtrics.com/jfe/form/SV_02155pALedYOBW6" width="50%" height="700" frameborder="0" marginheight="0" marginwidth="0">Cargando encuesta...</iframe>';
 var mostrado2 = false;
@@ -39,7 +39,7 @@ contenidoGeneradoEncuesta.style.display = "none";
 function mostrarOcultarEncuesta() {
     // Mostrar el contenido generado si aún no se ha mostrado
     if (!mostrado2) {
-        contenidoGenerado.style.display = "block";
+        contenidoGeneradoEncuesta.style.display = "block";
         mostrado2 = true;
         return;
     }
