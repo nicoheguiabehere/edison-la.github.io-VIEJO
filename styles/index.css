@@ -78,3 +78,17 @@ li:hover { /*efecto mouse*/
 .main_content { /*clase main content*/
     margin-top: 55px;
 }
+
+.boton-naranja {
+    background-color: orange;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    transition: all 0.2s ease;
+  }
+
+.boton-naranja:active {
+    transform: scale(0.95);
+}
