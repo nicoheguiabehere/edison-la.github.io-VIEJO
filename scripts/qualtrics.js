@@ -21,7 +21,7 @@ function mostrarOcultarContenido() {
 //encuesta inner (no hace falta el codigo de qualtrics en la web)
 var contenidoVisible = false;
 
-function mostrarEncuesta() {
+function mostrarEncuestaInner() {
     var encuestaContainer = document.getElementById("encuesta-container-inner");
     if (contenidoVisible) {
         encuestaContainer.innerHTML = "";
