@@ -1,7 +1,7 @@
 // encuesta caritas
 var contenidoGenerado = document.getElementById("contenido-generado");
 var mostrado = false;
-
+contenidoGenerado.style.display = "none";
 function mostrarOcultarContenido() {
     // Mostrar el contenido generado si aún no se ha mostrado
     if (!mostrado) {
