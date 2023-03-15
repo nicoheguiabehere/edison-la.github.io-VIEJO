@@ -31,12 +31,12 @@ function mostrarEncuestaInner() {
     }
 }
 
-// encuesta caritas
+// encuesta precargada
 var contenidoGeneradoEncuesta = document.getElementById("contenido-generado-encuesta");
 contenidoGeneradoEncuesta.innerHTML = '<iframe src="https://aysa.qualtrics.com/jfe/form/SV_02155pALedYOBW6" width="50%" height="700" frameborder="0" marginheight="0" marginwidth="0">Cargando encuesta...</iframe>';
 var mostrado2 = false;
 contenidoGeneradoEncuesta.style.display = "none";
-function mostrarOcultarContenido() {
+function mostrarOcultarEncuesta() {
     // Mostrar el contenido generado si aún no se ha mostrado
     if (!mostrado2) {
         contenidoGenerado.style.display = "block";
