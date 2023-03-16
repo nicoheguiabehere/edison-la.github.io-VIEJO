@@ -36,7 +36,7 @@ function download(filename, text) {
     document.body.removeChild(element);
 }
 function jsonToCSV(json) {
-    // funciona 
+    // funciona solamente para un arreglo de objetos planos
     var fields = Object.keys(json[0])
     var replacer = function (key, value) { return value === null ? '' : value }
     var csv = json.map(function (row) {
