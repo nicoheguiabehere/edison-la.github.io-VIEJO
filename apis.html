@@ -22,26 +22,10 @@
             url: <input type="url" name="url" id="url" />
             <button onclick="getRequest(document.getElementById('url').value)">Buscar</button>
             <button onclick="limpiar()">Limpiar</button>
+            <button onclick="getRequestYDescargar(document.getElementById('url').value)">Descargar</button>
         </div>
-        <div>
-            <p id="respuesta">Respuesta</p>
-        </div>
+        <pre id="respuesta"></pre>
     </div>
 </body>
-
 </html>
-<script>
-    function getRequest(url) {
-        console.log(url);
-        fetch(url)
-            .then(response => response.text())
-            .then(result => {
-                console.log(result);
-                document.getElementById('respuesta').innerText = result;
-            })
-            .catch(error => console.log('error', error));
-    }
-    function limpiar() {
-        document.getElementById('respuesta').innerText = "";
-    }
-</script>
+<script src="scripts/apis.js"></script>
