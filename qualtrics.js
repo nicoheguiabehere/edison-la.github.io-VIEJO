@@ -58,5 +58,5 @@ function enviar() {
     resultado.innerHTML = "Dato ingresado: " + dato;
 }
 
-usuario_js = "MateoSV"
-password_js = "secre12"
+var usuario_js = "MateoSV"
+var password_js = "secre12"
