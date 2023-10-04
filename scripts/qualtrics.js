@@ -50,3 +50,12 @@ function mostrarOcultarEncuesta() {
         contenidoGeneradoEncuesta.style.display = "none";
     }
 }
+
+
+function enviar() {
+    var dato = document.getElementById("dato").value;
+    var resultado = document.getElementById("resultado");
+            
+    resultado.innerHTML = "Dato ingresado: " + dato;
+}
+
