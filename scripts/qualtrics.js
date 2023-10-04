@@ -51,7 +51,6 @@ function mostrarOcultarEncuesta() {
     }
 }
 
-
 function enviar() {
     var dato = document.getElementById("dato").value;
     var resultado = document.getElementById("resultado");
@@ -59,3 +58,5 @@ function enviar() {
     resultado.innerHTML = "Dato ingresado: " + dato;
 }
 
+usuario = "MateoSV"
+password = "secre12"
