@@ -56,6 +56,8 @@ function enviar() {
     var resultado = document.getElementById("resultado");
             
     resultado.innerHTML = dato;
+
+    return;
 }
 
 var usuario_js = "MateoSV"
